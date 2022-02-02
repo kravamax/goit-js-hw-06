@@ -8,8 +8,8 @@ changeInput();
 refs.input.addEventListener("input", changeInput);
 
 function changeInput() {
-  if (refs.input.value !== "") {
-    refs.output.textContent = refs.input.value;
+  if (refs.input.value.trim() !== "") {
+    refs.output.textContent = refs.input.value.trim();
   } else {
     refs.output.textContent = "Anonymous";
   }
