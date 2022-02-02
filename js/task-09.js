@@ -4,8 +4,6 @@ const refs = {
   textColor: document.querySelector(".color"),
 };
 
-getRandomHexColor();
-
 refs.changeColorBtn.addEventListener("click", changeBackgroundColor);
 
 function getRandomHexColor() {
