@@ -10,14 +10,14 @@ validateInput();
 refs.input.addEventListener("blur", validateInput);
 
 function validateInput() {
-  if (refs.input.value.length === 0) {
+  if (refs.input.value.trim().length === 0) {
     refs.input.classList.remove("valid");
     refs.input.classList.remove("invalid");
 
     return;
   }
 
-  if (refs.input.value.length === refs.trueLengthInput) {
+  if (refs.input.value.trim().length === refs.trueLengthInput) {
     refs.input.classList.add("valid");
     refs.input.classList.remove("invalid");
   } else {
