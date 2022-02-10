@@ -3,8 +3,6 @@ const refs = {
   text: document.querySelector("#text"),
 };
 
-changeText();
-
 refs.range.addEventListener("input", changeText);
 
 function changeText() {

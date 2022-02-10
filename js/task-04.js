@@ -6,9 +6,6 @@ const refs = {
 
 let counterValue = 0;
 
-increment();
-decrement();
-
 refs.decrement.addEventListener("click", decrement);
 refs.increment.addEventListener("click", increment);
 

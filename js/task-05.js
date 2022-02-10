@@ -3,8 +3,6 @@ const refs = {
   output: document.querySelector("#name-output"),
 };
 
-changeInput();
-
 refs.input.addEventListener("input", changeInput);
 
 function changeInput() {

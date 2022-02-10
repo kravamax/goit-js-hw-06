@@ -5,8 +5,6 @@ const refs = {
   ),
 };
 
-validateInput();
-
 refs.input.addEventListener("blur", validateInput);
 
 function validateInput() {
